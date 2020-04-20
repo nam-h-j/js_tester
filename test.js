@@ -9,6 +9,7 @@ $(function() {
       if (agent.search(/Android/) != -1) {
           $('.js-appstore').hide();
           $('.logic_tester').push('Android');
+          $('.logic_status').push(Logic);
       } else if (agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1) {
           $('.js-googleplay').hide();
       }
