@@ -1,10 +1,17 @@
 // jquery
 $(function() {
-  var agent = navigator.userAgent;
+  // var agent = navigator.userAgent;
+  var agent = 'Android';
   var device = (agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1 || agent.search(/Android/) != -1) ? 'mobile' : 'pc';
 
+  var Hey = window.Hey || {}
+
+  Hey.logging = function(){
+    console.log('hey');
+    console.log(Hey);
+  }();//iife
+  
   var Logic = window.Logic || {};
-  console.log(Logic);
   Logic.setAppBtn = function() {
       if (agent.search(/Android/) != -1) {
           $('.js-appstore').hide();
