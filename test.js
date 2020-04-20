@@ -1,6 +1,9 @@
-$(function(){
+// jquery
+$(function() {
   console.log('1');
 });
+
+// Vanilla
 window.onload = function(){
   var id = 1
   var index = [1,2,3];
